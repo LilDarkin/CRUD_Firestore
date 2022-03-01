@@ -69,13 +69,13 @@ public class MainActivity extends AppCompatActivity {
             editTextSong.setText(update_artist.getArtistSong());
 
             if (update_artist.getArtistGenre().equals("Rock")) {
-                spinnerGenre.setSelection(1);
+                spinnerGenre.setSelection(0);
             }else if (update_artist.getArtistGenre().equals("Pop")) {
-                spinnerGenre.setSelection(2);
+                spinnerGenre.setSelection(1);
             }else if (update_artist.getArtistGenre().equals("RNB")) {
-                spinnerGenre.setSelection(3);
+                spinnerGenre.setSelection(2);
             }else if (update_artist.getArtistGenre().equals("Jazz")) {
-                spinnerGenre.setSelection(4);
+                spinnerGenre.setSelection(3);
             }
 
             listViewArtists.setVisibility(View.GONE);
@@ -134,9 +134,7 @@ public class MainActivity extends AppCompatActivity {
                         finish();
                         closeKeyboard();
                     }).addOnFailureListener(er ->
-                    {
-                        Toast.makeText(MainActivity.this, "" + er.getMessage(), Toast.LENGTH_SHORT).show();
-                    });
+                            Toast.makeText(MainActivity.this, "" + er.getMessage(), Toast.LENGTH_SHORT).show());
                 }
             }
         });
