@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="textViewName" type="id" />
+    <item name="textViewGenre" type="id" />
+    <item name="textViewAge" type="id" />
+    <item name="textViewBand" type="id" />
+    <item name="textViewSong" type="id" />
+</resources>
