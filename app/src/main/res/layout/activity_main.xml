@@ -80,11 +80,15 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="128dp"
         android:layout_marginRight="128dp"
-        android:text="Add" />
+        android:text="ADD" />
 
     <ListView
         android:id="@+id/listViewArtists"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/btnAddArtist"></ListView>
+        android:layout_below="@+id/btnAddArtist"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15sp"></ListView>
 </RelativeLayout>
